@@ -1,0 +1,25 @@
+//项目基础信息
+group "com.huang"
+version "1.0.0-snapshot"
+
+
+// 第三方插件
+apply plugin: 'java'
+
+
+// 设置 JDK 版本
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+
+// 指定maven仓库为maven中央仓库
+repositories {
+    mavenCentral()
+}
+
+
+// 设置项目的依赖库
+dependencies {
+    compile group: 'com.google.guava', name: 'guava', version: '28.1-jre'
+}
+
